@@ -1,0 +1,222 @@
+/* <!--Name: Chi Ming Lai
+    Student id: 158400200
+    Email: cmlai@myseneca.ca
+    Date: 07-04-2022--> */
+.container{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background-color: skyblue;
+    text-align: center;
+    font-size: x-large;
+  }
+  
+  .container2{
+      width: 100%;
+      height: 55em;
+      margin: auto;
+      font-size: larger;
+      background-color: lightgreen;
+  }
+  .container3{
+      width: 100%;
+      height: auto;
+      margin-top: -5em;
+      background-color: lightgoldenrodyellow;
+  }
+  .container4{
+      width: 100%;
+      height: auto;
+      margin-top: -25px;
+      background-color: lightblue;
+      text-align: center;
+  }
+  
+  
+  h1{
+      text-align: center;
+  }
+  
+  .container .centerImg{
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 50%;
+      border: 10px ridge red;
+      width: 15%;
+      
+  }
+  
+  .container .centerImg:hover{
+      box-shadow: 15px 15px 15px 15px rgba(0, 0, 0, 0.3);
+      }
+  
+  .container .name{
+      text-emphasis: filled double-circle green;
+      color: darkred;
+      text-decoration: green wavy underline;
+      font-family:cursive;
+  }
+  
+  .container .job{
+      width: 20%;
+      margin-left: auto;
+      margin-right: auto;
+      border: dotted green;
+      color: darkgoldenrod;
+      font-family: cursive;
+      
+  }
+  
+  button{
+      background-color: yellowgreen;
+      padding: 20px 30px 20px 30px;
+      border-radius: 50%;
+      color:  darkblue;
+      font-style: italic;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      transition-duration: 0.5s;
+  }
+  button:hover {
+      background-color: darkslategrey;
+      text-decoration: underline darkorange;
+      color: white;
+  }
+  
+  .AboutMe{
+      float: left;
+      width: 45%;
+      height: 40em;
+      background-color: lightgreen;
+      padding: 3.5%;
+      text-align: center;
+  }
+  
+  .title{
+      font-weight: bolder;
+      font-variant:small-caps;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      font-size: xx-large;
+      background-image: linear-gradient(
+          to left,
+          red,
+          orange,
+          yellow,
+          green,
+          blue,
+          indigo,
+          violet
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+  }
+  
+  .selfDes{
+      color: darkolivegreen;
+      border: solid purple;
+      padding: 5%;
+      height: auto;
+      font-family:cursive;
+  }
+  
+  .citation{
+      color: red;
+      background-color: white;
+      border: dashed black;
+      height: auto;
+      padding: 5%;
+  }
+  
+  .date{
+      color: red;
+      background-color: white;
+      border: dashed black;
+      padding: 5%;
+      height: auto;
+      font-weight: bolder;
+  }
+  .Info{
+      width: 41%;
+      /* height: 680px; */
+      height: 40em;
+      padding: 3.5%;
+      float: left;
+      background-color: lightgreen;
+  }
+  
+  .basicInfo{
+      border: dotted red;
+      color:darkred;
+      padding: 5%;
+      height: auto;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  }
+  
+  .basicInfo .InfoNested{
+      color: lightcoral;
+      padding: 5%;
+      border: dashed lightslategray;
+      height: auto;
+      font-style: italic;
+  }
+  
+  
+  .level{
+      padding-left: 10px;
+      color: brown;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .card{
+      border-radius: 60px 60px 60px 60px;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      background-color: seagreen;
+      border: 15px groove yellow;
+      height: auto;
+      overflow: auto;
+      width: 50%;
+      padding: 10px;
+      margin: 0 auto;
+      float: none; 
+      margin-bottom: 10px;
+      font-size: larger;
+      
+  }
+  
+  .card:hover {
+      box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.3);
+    }
+  
+  form fieldset{
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: x-large;
+      font-weight: bolder;
+      background-color: wheat;
+  }
+  
+  form legend{
+      font-size: xx-large;
+  }
+  
+  form label{
+     color:darkmagenta;
+     font-family: cursive;
+     font-weight: bolder;
+     font-size: larger;
+  }
+  
+  form input{
+      border-radius: 60px 60px 60px 60px;
+  }
+  
+  .submit{
+     font-size: x-large;
+     font-family: cursive;
+     padding:1%;
+     margin-left: 3%;
+     margin-right: 3%;
+  }
+  
+  

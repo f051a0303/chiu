@@ -1,0 +1,154 @@
+<!--Name: Chi Ming Lai
+    Student id: 158400200
+    Email: cmlai@myseneca.ca
+    Date: 07-04-2022-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My resume</title>
+    <link rel="stylesheet" href="chi.css" type="text/css">
+    <script src="./chi.js"></script>
+</head>
+<body>
+    <div class="container">
+       
+        <img src="./myself.JPG" alt="Me" class="centerImg">
+        <h1 class="name">ALEX LAI</h1>
+        <p class="job">Web Developer / Programmer</p>
+        
+        <nav>
+             <form style="display: inline" action="./resume.pdf" method="get">
+                <button>resume.pdf</button>
+            </form>
+            <form style="display: inline" action="#contact" method="get">
+                <button>Contact Me</button>
+            </form>
+            
+        </nav>
+    </div>
+    <div class="container2">
+        <div class="AboutMe">
+            <h2 class="title">About Me and Academic Honesty</h2>
+            <p class="selfDes">I am a Computer science student that have passion on both web and software developing, with my programming skills learn in Seneca college, I would be a great member of your company! So, what're you waiting for? reach me out and learn more about me!!!</p>
+            <footer class="citation"><cite>I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. No part of this assessment has been copied manually or electronically from any other source (including web sites) except for the information supplied by the WEB222 instructors and / or made available in this assessment for my use. I also declare that no part of this assignment has been distributed to other students</cite></footer>
+            <p class="date">Date: 06-04-2022</p>
+            <br>
+            
+        </div>
+        <div class="Info">
+            <h2 class="title">Information about me</h2>
+           
+            <div class="basicInfo">
+                <p>Name: &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;Chi Ming Lai</p>
+                <p>AGE:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;22</p>
+                <p>EMAIL:&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;cmlai@myseneca.ca</p>
+                <p>LANGUAGE:&emsp;&emsp;&nbsp;&nbsp;&nbsp;English</p>
+                <p>CLASS SECTION:&nbsp;&nbsp;   WEB222 ZCC</p>
+                <p>STUDENT ID:&emsp;&emsp; 158400200</p>
+                <p>INSTRUCTOR: &emsp;&nbsp;&nbsp;Dr. Muath Alzghool</p>
+                <p>CAMPUS:&emsp;&emsp;&emsp;&emsp;SIA</p>
+                <br>
+                <p class="InfoNested">The above information is my basic contact information, the detailed education information is listed as below. </p>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="container3">
+        <h1 class="title">Education</h1>
+        <br>
+        <div class="card">
+            <h3>2021-2023(expected)</h3>
+            <h3 class="level">Diploma</h3>
+            <p>
+                <b>Seneca College</b> <br><br>
+                Diploma of Computer Programming (CPP)
+            </p>
+        </div>
+        <div class="card">
+            <h3>2011-2017</h3>
+            <h3 class="level">High School</h3>
+            <p>
+                <b>Hong Kong secondary school</b> <br><br>
+                Essay writing
+            </p>
+        </div>
+        <div class="card">
+            <h3>2017-2021</h3>
+            <h3 class="level">Bachelor's Degree </h3>
+            <p>
+                <b>Hong Kong Polytechnic University</b> <br><br>
+                Hospitality Management
+            </p>
+        
+        </div>
+    </div>
+    <div class="container4">
+        <h1 id="contact" class="title">Contact Me</h1>
+        <form action="https://httpbin.org/post" method="POST" name="contact" id="Contact" 
+        onsubmit="return validateText(this);">
+            <fieldset>
+                <legend>Your Information</legend>
+            <div>
+                <label for="fname">Name:</label>
+                <input type="text" id="fname" name="Name" size="40"  placeholder="Enter Your Name Here" required>
+            </div>
+            <div>
+                <label for="fmail">Email:</label>
+                <input type="email" id="fmail" name="email" size="40" required>
+            </div>
+            <div>
+                <label for="faddress1">Address1:</label>
+                <input type="text" id="faddress1" name="address1" size="40" required>
+            </div>
+            <div>
+                <label for="faddress2">Address2:</label>
+                <input type="text" id="faddress2" name="address2" size="40">
+            </div>
+            <div>
+                <label for="city">City:</label>
+                <input list="cities" id="city" name="city" size="40" required>
+                <datalist id="cities">
+                    <option value="Ottawa">
+                    <option value="Edmonto">
+                    <option value="Victoria">
+                    <option value="Winnipeg">
+                    <option value="Halifax">
+                    <option value="Toronto">
+                    <option value="Calgary">
+                    <option value="Vancouver">
+                </datalist>
+            </div>
+            <div>
+                <Label for="postal">Postal Code:</Label>
+                <input type="text" id="postal" pattern="[A-Z][0-9][A-Z][0-9][A-Z][0-9]" size="40" title="Postal-code" required>
+            </div>
+            <div>
+                <Label>Action:</Label>
+                <input type="radio" name="action" value="question" id="question" required>Question
+                <input type="radio" name="action" value="comment" id="comment">Comment
+                <input type="radio" name="action" value="hiring" id="hiring">Hiring
+                <div id="Action">
+                    <!--Dynamic tag create here-->
+                </div>
+            </div>
+            <div>
+                <Label>Please Rate this website (bad 1 - 10 good):</Label>
+                <input type="number" name="Rate" min="1" max="10" required>
+            </div>
+            <br>
+            <input type="submit" value="Submit"  class="submit" > 
+            <input type="reset" class="submit">
+        </fieldset>
+        </form>
+    </div>
+        
+       
+    
+    
+</body>
+</html>
